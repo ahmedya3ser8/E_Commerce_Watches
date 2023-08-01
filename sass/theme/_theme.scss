@@ -1,5 +1,4 @@
 /*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
 body.dark-theme{
   --primary-color: #efbe8a;
   --button-color: #3d3d3d;
@@ -11,22 +10,16 @@ body.dark-theme{
   --border-color: #333333;
 }
 
-/*========== Button Dark/Light ==========*/
 .change-theme {
   color: var(--title-color);
   font-size: 1.25rem;
   cursor: pointer;
 }
 
-/*========== 
-  Color changes in some parts of 
-  the website, in dark theme 
-==========*/
-
 .dark-theme .change-theme,
-.dark-theme .nav__toggle,
-.dark-theme .nav__shop,
-.dark-theme .button--gray{
+.dark-theme .nav-toggle,
+.dark-theme .nav-shop,
+.dark-theme .button-gray{
   color: #262626;
 }
 
@@ -35,8 +28,8 @@ body.dark-theme{
 }
 
 .scroll-header .change-theme,
-.scroll-header .nav__toggle,
-.scroll-header .nav__shop{
+.scroll-header .nav-toggle,
+.scroll-header .nav-shop{
   color: var(--title-color);
 }
 

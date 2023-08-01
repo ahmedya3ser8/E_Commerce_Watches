@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+  <a href="#" class="scrollup" id="scroll-up"> 
+    <i class='bx bx-up-arrow-alt scrollup-icon'></i>
+  </a>
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav-logo">
@@ -20,16 +23,16 @@
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
+            <a href="#home" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#featured" class="nav-link">Featured</a>
+            <a href="#featured" class="nav-link active">Featured</a>
           </li>
           <li class="nav-item">
-            <a href="#products" class="nav-link">Products</a>
+            <a href="#products" class="nav-link active">Products</a>
           </li>
           <li class="nav-item">
-            <a href="#new" class="nav-link">New</a>
+            <a href="#new" class="nav-link active">New</a>
           </li>
         </ul>
         <div class="nav-close" id="nav-close">
@@ -38,7 +41,7 @@
       </div>
       <div class="nav-buttons">
         <!-- Theme change button -->
-        <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
         <div class="nav-shop" id="cart-shop">
             <i class='bx bx-shopping-bag' ></i>
         </div>
@@ -48,6 +51,79 @@
       </div>
     </nav>
   </header>
+  <div class="cart" id="cart">
+    <i class='bx bx-x cart-close' id="cart-close"></i>
+    <h2 class="cart-main-title">My Cart</h2>
+    <div class="cart-container">
+      <article class="cart-card">
+        <div class="cart-img-box">
+          <img src="assets/image/featured1.png" alt="cart-image" class="cart-img">
+        </div>
+        <div class="cart-details">
+          <h3 class="cart-title">Jazzmaster</h3>
+          <span class="cart-price">$1050</span>
+          <div class="cart-amount">
+            <div class="cart-amount-content">
+              <span class="cart-amount-box">
+                <i class='bx bx-minus'></i>
+              </span>
+              <span class="cart-amount-number">1</span>
+              <div class="cart-amount-box">
+                <i class='bx bx-plus'></i>
+              </div>
+            </div>
+            <i class='bx bx-trash-alt cart-amount-trash'></i>
+          </div>
+        </div>
+      </article>
+      <article class="cart-card">
+        <div class="cart-img-box">
+          <img src="assets/image/featured2.png" alt="cart-image" class="cart-img">
+        </div>
+        <div class="cart-details">
+          <h3 class="cart-title">Rose Gold</h3>
+          <span class="cart-price">$850</span>
+          <div class="cart-amount">
+            <div class="cart-amount-content">
+              <span class="cart-amount-box">
+                <i class='bx bx-minus'></i>
+              </span>
+              <span class="cart-amount-number">1</span>
+              <div class="cart-amount-box">
+                <i class='bx bx-plus'></i>
+              </div>
+            </div>
+            <i class='bx bx-trash-alt cart-amount-trash'></i>
+          </div>
+        </div>
+      </article>
+      <article class="cart-card">
+        <div class="cart-img-box">
+          <img src="assets/image/new1.png" alt="cart-image" class="cart-img">
+        </div>
+        <div class="cart-details">
+          <h3 class="cart-title">Longines Rose</h3>
+          <span class="cart-price">$980</span>
+          <div class="cart-amount">
+            <div class="cart-amount-content">
+              <span class="cart-amount-box">
+                <i class='bx bx-minus'></i>
+              </span>
+              <span class="cart-amount-number">1</span>
+              <div class="cart-amount-box">
+                <i class='bx bx-plus'></i>
+              </div>
+            </div>
+            <i class='bx bx-trash-alt cart-amount-trash'></i>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="cart-prices">
+      <span class="cart-prices-item">3 items</span>
+      <span class="cart-prices-total">$2880</span>
+    </div>
+  </div>
   <main class="main">
     <section class="home" id="home">
       <div class="home-container container grid">
@@ -81,7 +157,7 @@
         </div>
       </div>
     </section>
-    <section class="featured section container">
+    <section class="featured section container" id="featured">
       <h2 class="section-title">Featured</h2>
       <div class="featured-container grid">
         <article class="featured-card">
@@ -251,7 +327,7 @@
         </div>
       </div>
     </section>
-    <section class="new section container">
+    <section class="new section container" id="new">
       <h2 class="section-title">New Arrivals</h2>
       <div class="new-container">
         <div class="swiper new-swiper">
@@ -296,7 +372,84 @@
         </div>
       </div>
     </section>
+    <section class="newsletter section container">
+      <div class="newsletter-box grid">
+        <div>
+          <h2 class="newsletter-title">Subscribe Our <br> Newsletter</h2>
+          <p class="newsletter-description">
+            Don't miss out on your discounts. Subscribe to our email 
+            newsletter to get the best offers, discounts, coupons, 
+            gifts and much more.
+          </p>
+        </div>
+        <form action="" class="newsletter-subscribe">
+          <input type="email" placeholder="Enter your email" class="newsletter-input">
+          <button class="button">SUBSCRIBE</button>
+        </form>
+      </div>
+    </section>
   </main>
+  <footer class="footer section">
+    <div class="footer-container container grid">
+      <div class="footer-content">
+        <h3 class="footer-title">Our information</h3>
+        <ul class="footer-list">
+          <li>1234 - Peru</li>
+          <li>La Libertad 43210</li>
+          <li>123-456-789</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-title">About Us</h3>
+        <ul class="footer-links">
+          <li>
+            <a href="#" class="footer-link">Support Center</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Customer Support</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Copy Right</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-title">Product</h3>
+        <ul class="footer-links">
+          <li>
+            <a href="#" class="footer-link">Road bikes</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Mountain bikes</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Electric</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Accesories</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-title">Social</h3>
+        <ul class="footer-social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer-social-link">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="footer-social-link">
+            <i class='bx bxl-twitter'></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+            <i class='bx bxl-instagram'></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <span class="footer-copyright">&copy; Ahmed Yasser. All rights reserved</span>
+  </footer>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

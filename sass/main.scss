@@ -2,6 +2,7 @@
 @use './base/base';
 @use './theme/theme';
 @use './components/buttons';
+@use './pages/cart';
 @use './pages/header';
 @use './pages/home';
 @use './pages/featured';
@@ -9,3 +10,5 @@
 @use './pages/products';
 @use './pages/testimonial';
 @use './pages/new';
+@use './pages/newsletter';
+@use './pages/footer';
