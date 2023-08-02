@@ -1,6 +1,27 @@
 .testimonials {
   .testimonial-container {
     row-gap: 4rem;
+    @media screen and (min-width: 767px) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      & {
+        column-gap: 8rem;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      & {
+        padding-bottom: 4rem;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      & {
+        column-gap: 13rem;
+      }
+    }
     .testimonial-quote {
       display: inline-flex;
       background-color: var(--container-color);
@@ -46,16 +67,42 @@
       .testimonial-square,
       .testimonial-img {
         width: 250px;
+        @media screen and (max-width: 320px) {
+          & {
+            width: 180px;
+          }
+        }
+        @media screen and (min-width: 992px) {
+          & {
+            width: 450px;
+          }
+        }
       }
       .testimonial-square {
         height: 250px;
         background-color: var(--primary-color);
         margin-left: auto;
+        @media screen and (max-width: 320px) {
+          & {
+            height: 180px;
+          }
+        }
+        @media screen and (min-width: 992px) {
+          & {
+            height: 450px;
+          }
+        }
       }
       .testimonial-img {
         position: absolute;
         right: 2rem;
         top: 3rem;
+        @media screen and (min-width: 1024px) {
+          & {
+            right: 5rem;
+            top: 5rem;
+          }
+        }
       }
     }
     .testimonial-swiper {

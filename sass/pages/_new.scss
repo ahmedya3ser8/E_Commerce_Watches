@@ -1,5 +1,10 @@
 .new {
   .new-container {
+    @media screen and (min-width: 992px) {
+      & {
+        padding-top: 2rem;
+      }
+    }
     .new-card {
       position: relative;
       text-align: center;
@@ -29,6 +34,11 @@
         .new-price {
           font-size: var(--h3-font-size);
           font-weight: var(--font-bold);
+          @media screen and (min-width: 767px) {
+            & {
+              font-size: var(--noraml-font-size);
+            }
+          }
         }
         .new-title {
           text-transform: uppercase;

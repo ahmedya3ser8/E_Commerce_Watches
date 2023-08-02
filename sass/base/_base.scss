@@ -49,6 +49,18 @@ button{
   max-width: 1024px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  @media screen and (max-width: 320px) {
+    & {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .grid{
@@ -61,6 +73,11 @@ button{
 
 .section{
   padding: 6.5rem 0 1rem;
+  @media screen and (min-width: 767px) {
+    & {
+      padding: 8rem 0 1rem;
+    }
+  }
   &-title{
     position: relative;
     font-size: var(--h3-font-size);
@@ -68,6 +85,11 @@ button{
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    @media screen and (min-width: 992px) {
+      & {
+        font-size: var(--h2-font-size)
+      }
+    }
     &::before{
       content: '';
       position: absolute;
@@ -92,6 +114,11 @@ button{
   z-index: var(--z-tooltip);
   opacity: 0.8;
   transition: 0.3s;
+  @media screen and (min-width: 1024px) {
+    & {
+      right: 3rem;
+    }
+  }
   &:hover {
     opacity: 1;
   }

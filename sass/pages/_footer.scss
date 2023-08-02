@@ -3,9 +3,25 @@
     row-gap: 2rem;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 3rem;
+    @media screen and (min-width: 576px) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media screen and (min-width: 767px) {
+      & {
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+      }
+    }
     .footer-title {
       font-size: var(--h2-font-size);
       margin-bottom: 1.5rem;
+      @media screen and (min-width: 767px) {
+        & {
+          font-size: var(--h3-font-size);
+        }
+      }
     }
     .footer-list,
     .footer-links {

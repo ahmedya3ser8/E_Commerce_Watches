@@ -11,11 +11,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 767px) {
+      & {
+        height: 5rem;
+        justify-content: initial;
+        column-gap: 3rem;
+      }
+    }
     .nav-logo,
     .nav-toggle,
     .nav-shop,
     .nav-close {
       color: var(--title-color);
+    }
+    @media screen and (min-width: 767px) {
+      .nav-toggle,
+      .nav-close {
+        display: none;
+      }
     }
     .nav-logo {
       text-transform: uppercase;
@@ -66,10 +79,26 @@
         }
       }
     }
+    @media screen and (min-width: 767px) {
+      .nav-list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5rem;
+        .nav-link {
+          text-transform: initial;
+          font-size: var(--normal-font-size);
+        }
+      }
+    }
     .nav-buttons {
       display: flex;
       align-items: center;
       column-gap: 1rem;
+      @media screen and (min-width: 767px) {
+        & {
+          margin-left: auto;
+        }
+      }
       .nav-shop,
       .nav-toggle {
         font-size: 1.25rem;
